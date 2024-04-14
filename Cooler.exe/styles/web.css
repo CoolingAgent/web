@@ -1,0 +1,485 @@
+@font-face {
+  font-family: lain;
+  src: url(lain.ttf);
+}
+
+p {
+  font-family: DotGothic16;
+}
+
+body{
+overflow-x: hidden;
+background-color:black;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+#icon{
+width: 20px;
+cursor: pointer
+}
+
+nav ul{
+position: flex;
+flex: 1;
+text-align: right;
+}
+
+.back-video
+{
+  position: flex;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 70px;
+}
+
+
+.hero{
+height: 900px;
+width: 78%;
+font-family: DotGothic16;
+position: flex;
+}
+
+nav{
+position:flex;
+width: 120%;
+margin:flex;
+margin-right: 90%;
+}
+
+
+
+.logo{
+width: 50px;
+display:flex;
+margin-left: 40px;
+width: 150px;
+cursor: pointer;
+}
+
+nav ul li{
+position: flex;
+display: inline-flex;
+list-style-type: none;
+margin: 0px 20px;
+
+}
+
+nav ul li{
+text-decoration: none;
+color: rgb(228, 108, 108);
+}
+nav ul li a:hover{
+color: rgb(67, 168, 202);
+}
+
+.info{
+color: red;
+align-items: center;
+margin-left: 2%;
+margin-top: 15px;
+}
+.info h1{
+font-size: 60px;
+}
+span{
+color:rgb(83, 255, 246)
+}
+
+
+
+
+
+
+.typing-demo {
+width: 8ch;
+animation: typing 2s steps(23) infinite ;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid;
+}
+
+@keyframes typing {
+from {
+  width: 0
+}
+}
+  
+@keyframes blink {
+10% {
+  border-color: transparent
+}
+}
+
+.img-box{
+position:flex;
+top: 190%;
+width:45%;
+height:80%;
+position:absolute;
+bottom:0%;
+right:100px;
+border-radius: 30px;
+
+
+}
+
+.img-box img{
+height:100%;
+position:absolute;
+left:50%;
+bottom:0;
+transform: translateX(-50%);
+transition: bottom 1s;
+border-radius: 30px;
+
+}
+
+.img-box:hover .back-img{
+bottom: 10%;
+border-radius: 30px;
+
+}
+
+
+@media (min-aspect-ratio: 16/9)
+{
+  .back-video
+  {
+    width: 100%;
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+  .back-video
+  {
+    width: auto;
+    height:100%;
+  }
+}
+
+
+
+
+
+
+.mid b{
+padding-top: 100px;
+}
+
+.mid h2{
+  font-family: lain;
+  font-size: 100px;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-justify: newspaper;
+  margin-left: 2%;
+  }
+
+
+
+.mid h3{
+padding-left: 40px;
+position: absolute;
+right: 50px;
+font-family: DotGothic16;
+color: rgb(1, 116, 247);
+text-align: center;
+
+}
+
+
+.me2{
+top: 150%;
+width:45%;
+height:80%;
+position:absolute;
+bottom:0;
+right:100px;
+}
+
+.exp{
+padding-top: 400px;
+}
+
+c{
+  display:flex;
+  padding-left: 33%;
+  font-family: lain;
+  font-size: 100px;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-justify: newspaper;
+  margin-left: 2%;
+}
+
+d{
+  display: flex;
+  padding-top: 13%;
+  padding-left: 40px;
+  position: absolute;
+  right: 50px;
+  font-family: lain;
+  font-size: 20px;
+  color: rgb(247, 1, 1);
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr); /* Creates two columns of equal width */
+  grid-gap: 10px; /* Space between grid items */
+  padding: 7px;
+}
+
+.grid-item {
+  background-color: #000000; /* Light grey background for the items */
+  border: 1px solid #f590df; /* Light grey border */
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: #000000; /* Fallback color */
+  background-color: #000000; /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #f590df;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f590df;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: DotGothic16;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  color:white;
+  transition: color 0.4s ease-in-out;
+  border: none;
+  outline: none;
+}
+button:hover {
+  background-color: transparent; /* Example: keeping background transparent on hover */
+  color: #d60404; /* Change text color to dark red on hover */
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.img-box2{
+  top: 180%;
+  width:45%;
+  height:80%;
+  position:absolute;
+  bottom:0%;
+  left:55%;
+  border-radius: 30px;
+  
+  
+  }
+  
+  .img-box2 img{
+  height:140%;
+  position:absolute;
+  right: 130%;
+  bottom: 4%;
+  transition: bottom 1s;
+  border-radius: 30px;
+  
+  }
+  
+  .img-box2:hover .back-img2{
+  bottom: 40px;
+  border-radius: 30px;
+  
+  }
+
+  .CONTACT1
+  {
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+  }
+  
+  label {
+      display: block;
+      margin: 10px 0 5px;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  
+  button {
+    font-family: DotGothic16;
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 5px 1px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #45a049;
+  }
+  }
+  
+  plz{
+    display:flex;
+    padding-left: 7%;
+    font-family: lain;
+    font-size: 90px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-justify: newspaper;
+    margin-left: 2%;
+    margin-top: -130px;
+  }
+  no{
+    margin-left:10%;
+  }
+
+  /* Style inputs and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* Dark background */
+    color: #fff; /* White text */
+    border: 2px solid #fff; /* Optional: white border, can be adjusted or removed */
+    border-radius: 4px; /* Optional: adds rounded corners */
+}
+
+/* Style the placeholder text */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #fff; /* White placeholder text */
+    opacity: 1; /* Ensure the placeholder is fully visible */
+}
+
+/* Adjust focus style for accessibility and visual feedback */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none; /* Removes the default focus outline */
+    background-color: #444; /* Optional: slightly lighter background on focus */
+    /* You can add a different border or shadow for focused elements if needed */
+}
+
+f{
+  display: flex;
+  padding-top: 40%;
+  position: absolute;
+  right: 70%;
+  font-family: lain;
+  font-size: 60px;
+  color: #fff;
+}
+
+
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.playlist-item {
+  position: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playlist-item:hover .overlay {
+  opacity: 1;
+}
+
+.playlist-item img {
+  top: 250%;
+  right: 180%;
+  display: block;
+  width: auto;
+  height: 70%;
+}
+.playlist-item2 img {
+  top: 250%;
+  right: 135%;
+  display: block;
+  width: auto;
+  height: 70%;
+}
+.playlist-item3 img {
+  top: 250%;
+  right: 90%;
+  display: block;
+  width: auto;
+  height: 70%;
+}
+.playlist-item4 img {
+  top: 250%;
+  right: 45%;
+  display: block;
+  width: auto;
+  height: 70%;
+}
+.playlist-item5 img {
+  top: 250%;
+  right: 2%;
+  display: block;
+  width: auto;
+  height: 70%;
+}
+
